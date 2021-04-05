@@ -1,0 +1,57 @@
+Simple Single Player Cheat Menu by Benargee
+This work is licensed under the Arma Public License Share Alike http://www.bistudio.com/community/licenses/arma-public-license-share-alike
+
+---v1.0 
+--March 19, 2015
+-Initial Release
+
+---v1.0.1
+--March 19, 2015
+-Changed All "InitTest" file paths to "SSPCM". Mod no longer broken
+
+---v1.0.2
+--March 20, 2015
+-Added a delay to menu init script. Should hopefully fix the problem a few people have been having
+-Redifined a few functions to proper names BRG_fnc_postInit and BRG_fnc_preInit
+
+---v1.0.3
+--March 22, 2015
+Added: Support for multiple units. When player changes unit, cheat menu will now function properly
+Fixed: Second attempt at fixing the issue where menu will not show up for some users. Mod will check every 4 seconds to see if menu is visible. This will insure it always appears. Wait up to 10 seconds for menu to appear.
+Fixed: Changed some more function definitions using CfgFunctions.
+Known Issue: When player switches unit, old cheat attributes will still be active. This may or may not be an issue for users. Optional solution is planned.
+Known Issue: Cheat menu may not work when loading a game save. Only works reliably in freshly started missions. Thank you nubmarine for pointing that out!
+
+---v1.1.0
+--March 25, 2015
+Added: Bullet Cam
+Added: Bullet Tracing
+Added: Disable fatigue
+Added: Infinite ammo
+Added: Vehicle invincibility (under invincibility)
+Changed: "Ignored by enemy" to "Side relations"
+Added: Friendly to allies and Hostile to everyone
+Added: Spawn in Jet. Player will spawn in jet that is in flight. 
+Added: 3D Teleport. Now you can teleport where you look
+
+---v1.1.5
+--June 1, 2015
+Fixed: All addon content should be available with Zeus.
+Added: Button in map screen to manually initialize SSPCM when resuming a mission.
+Fixed: When spawning in flying jet, map is now automatically closed.
+Fixed: When teleporting, player will now be teleported with their vehicle. This can optionally be changed to previous behaviour.
+Added: Link to Zeus field manual in Zeus sub-menu. this is especially helpful for players new to Zeus and Arma.
+Added: Virtual Garage menu option. Thank you tortuosit for laying out the code for me!
+Added: Ability to open debug console in map screen in addition to existing action menu option.
+
+---v1.1.6 (Contact Menu Fix)
+--August 10, 2019
+Added: Experimental UI menu to Contact Only
+Changed: Refactored a lot of code to allow old and new menu to coexist. 
+Known bug: Spawn in jet doesn't entirely work. Use at own risk.
+Known bug: Various script errors but nothing that seems to effect functionality
+
+---v1.1.7 (Old Man Hotfix)
+--April 19, 2020
+Changed: Now loads new cheat menu in Old Man, Tanoa mission
+Note: No other changes as this is a quick fix for Old Man. Other fixes will be left for later verisons.
